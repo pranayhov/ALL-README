@@ -149,5 +149,70 @@ pm2 flush
 
 ---
 
+# Sudo Commands Cheat Sheet
+
+## 📁 File & Directory Operations
+```bash
+sudo mkdir /opt/myfolder           # Create a folder in a root-level directory
+sudo rm -rf /opt/myfolder          # Force delete a folder
+sudo cp myfile.txt /etc/           # Copy file to a protected location
+sudo mv /path/a /path/b            # Move or rename files/directories
+```
+
+## 📝 File Editing
+```bash
+sudo nano /etc/hosts               # Edit a file with nano
+sudo vim /etc/nginx/nginx.conf     # Edit a file with Vim
+sudo touch /etc/newfile.conf       # Create a new file
+```
+
+## ⚙️ System Management
+```bash
+sudo reboot                        # Reboot the system
+sudo shutdown now                  # Shut down immediately
+sudo systemctl start nginx         # Start a service
+sudo systemctl stop apache2        # Stop a service
+sudo systemctl status docker       # Check the status of a service
+```
+
+## 👤 User & Permissions
+```bash
+sudo useradd newuser               # Add a new user
+sudo passwd newuser                # Set a user's password
+sudo chown user:group file.txt     # Change file ownership
+sudo chmod 755 script.sh           # Change file permissions
+```
+
+## 📦 Package Management (Debian/Ubuntu)
+```bash
+sudo apt update                    # Update package list
+sudo apt upgrade                   # Upgrade installed packages
+sudo apt install nginx             # Install a package
+sudo apt remove nginx              # Remove a package
+```
+
+## 📦 Package Management (RHEL/CentOS/Fedora)
+```bash
+sudo yum install git               # Install a package with yum
+sudo dnf install docker            # Install a package with dnf
+```
+
+## 👨‍💻 Developer Tasks
+```bash
+sudo git clone https://github.com/user/repo.git   # Clone a repo with sudo
+sudo npm install -g create-react-app              # Install a global npm package
+sudo systemctl restart nginx                      # Restart a service
+```
+
+## 💡 Tips
+```bash
+sudo -i                          # Start a root shell
+sudo bash                        # Run a bash shell with root permissions
+```
+
+> 🛡️ Always double-check commands with `sudo` — you have the power to break things!
+
+
+
 > 🚀 You're now ready to serve your app at:  
 > **https://lab.reidatasolutions.com**
